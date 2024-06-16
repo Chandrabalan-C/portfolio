@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web3 Developer Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.7/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        .navbar-scrolled {
+            background-color: rgba(255, 255, 255, 0.9);
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        input, textarea {
+            color: black;
+        }
+        .profile-pic {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid white;
+        }
+        .profile-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .profile-container h1 {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 font-sans leading-normal tracking-normal">
+    <nav id="navbar" class="bg-white p-6 fixed w-full top-0 z-10 transition duration-300 ease-in-out">
+        <div class="container mx-auto">
+            <div class="flex justify-between items-center">
+                <div>
+                    <a href="#" class="text-xl font-bold text-gray-800">My Portfolio</a>
+                </div>
+                <div>
+                    <ul class="flex space-x-6">
+                        <li><a href="#" class="text-gray-800 hover:text-blue-500">Home</a></li>
+                        <li><a href="#projects" class="text-gray-800 hover:text-blue-500">Projects</a></li>
+                        <li><a href="#contact" class="text-gray-800 hover:text-blue-500">Contact</a></li>
+                        <li><a href="Chandrabalan_Resume.pdf" class="text-gray-800 hover:text-blue-500" style="color:blue">Resume</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <header class="py-20 bg-gray-900 text-center mt-20 profile-container">
+        <img src="Images/profile-pic.png" alt="Chandrabalan's Photo" class="profile-pic">
+        <h1 class="text-4xl font-bold text-white">Chandrabalan</h1>
+        <p class="mt-4 text-lg text-gray-300">I'm a passionate Web3 developer</p>
+        <a href="#contact" class="mt-6 inline-block bg-blue-500 text-white py-2 px-6 rounded hover:bg-blue-600">Hire Me</a>
+    </header>
+    <section id="projects" class="py-20">
+        <div class="container mx-auto">
+            <h2 class="text-2xl font-bold mb-8 text-center">Projects</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white rounded-lg shadow-md p-6">
+                    <img src="Images/voting2.jpg" alt="Project 1 Image" class="rounded-t-lg mb-4">
+                    <h3 class="text-xl font-bold mb-2">Project 1</h3>
+                    <p class="text-gray-700 mb-4">Developed a secure and transparent voting system leveraging blockchain technology. The project ensures the integrity and immutability of voting records by utilizing decentralized ledger mechanisms.</p>
+                    <a href="https://github.com/Chandrabalan-C/Voting_Web3.github.io" class="inline-block bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600">View Source Code</a>
+                </div>
+                <div class="bg-white rounded-lg shadow-md p-6">
+                    <img src="Images/farming.jpg" alt="Project 2 Image" class="rounded-t-lg mb-4">
+                    <h3 class="text-xl font-bold mb-2">Project 2</h3>
+                    <p class="text-gray-700 mb-4">FarmLoanTrace is a blockchain-based solution aimed at revolutionizing the distribution of government loans and agricultural schemes. By leveraging decentralized ledger technology, it ensures transparency and immutability.</p>
+                    <a href="https://github.com/Chandrabalan-C/Transparent-Farmer-Loan-System.github.io" class="inline-block bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600">View Source Code</a>
+                </div>
+                <div class="bg-white rounded-lg shadow-md p-6">
+                    <img src="Images/blockchain.jpg" alt="Project 3 Image" class="rounded-t-lg mb-4" style="height: 290px;">
+                    <h3 class="text-xl font-bold mb-2">Project 3</h3>
+                    <p class="text-gray-700 mb-4">Contributed to the design and implementation of a blockchain network using cryptographic techniques to enhance the functionality and reliability of the blockchain system.</p>
+                    <a href="https://github.com/Chandrabalan-C/Blockchain" class="inline-block bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600">View Source Code</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="contact" class="py-20 bg-gray-800 text-white">
+        <div class="container mx-auto">
+            <h2 class="text-2xl font-bold mb-8 text-center">Contact Me</h2>
+            <form class="max-w-md mx-auto" action="mailto:chandrabalan24c@gmail.com" method="post" enctype="text/plain">
+                <div class="mb-4">
+                    <label class="block mb-2" for="name">Name</label>
+                    <input class="w-full px-3 py-2 border rounded-lg focus:outline-none focus:border-blue-500" type="text" id="name" name="name" placeholder="Your Name">
+                </div>
+                <div class="mb-4">
+                    <label class="block mb-2" for="email">Email</label>
+                    <input class="w-full px-3 py-2 border rounded-lg focus:outline-none focus:border-blue-500" type="email" id="email" name="email" placeholder="Your Email">
+                </div>
+                <div class="mb-4">
+                    <label class="block mb-2" for="message">Message</label>
+                    <textarea class="w-full px-3 py-2 border rounded-lg focus:outline-none focus:border-blue-500" id="message" name="message" rows="4" placeholder="Your Message"></textarea>
+                </div>
+                <button class="w-full bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="submit">Send Message</button>
+                <button class="w-full bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="reset" style="margin-top: 10px;">Reset</button>
+            </form>
+        </div>
+    </section>
+    <footer class="py-6 bg-gray-900 text-white text-center">
+        <div class="container mx-auto">
+            <p>&copy; 2024 Chandrabalan. All rights reserved.</p>
+        </div>
+    </footer>
+    <script>
+        window.addEventListener('scroll', function() {
+            var navbar = document.getElementById('navbar');
+            if (window.scrollY > 50) {
+                navbar.classList.add('navbar-scrolled');
+            } else {
+                navbar.classList.remove('navbar-scrolled');
+            }
+        });
+    </script>
+</body>
+</html>
